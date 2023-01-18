@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <title>Задание 2</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <p>1.Часы. Напишите, сколько прошло минут с начала суток и узнаете настоящее время.</p>
+    <form
+      onsubmit="usersNumber(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="minuteString" placeholder="Минуты" type="text" />
+      <button id="button1" type="submit">Отправить</button>
+    </form>
+    <div id="firstQuest"></div>
+    <p>2.Приветствие!</p>
+    <form
+      onsubmit="usersName(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="nameString" placeholder="Имя" type="text" />
+      <button id="button2" type="submit">Отправить</button>
+    </form>
+    <div id="secondQuest"></div>
+    <p>3.Следующее и предыдущее. Числа-соседи.</p>
+    <form
+      onsubmit="neighbors(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="NeighborsString" placeholder="Число" type="text" />
+      <button id="button3" type="submit">Отправить</button>
+      </form>
+    <div id="threeQuest"></div>
+    <p>4.Парты. Напишите кол-во учеников в трёх классах. Функция вернёт количество парт для закупки.</p>
+    <form
+      onsubmit="desks(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="desksString1" placeholder="Число уч в 1" type="text" />
+      <input id="desksString2" placeholder="Число уч во 2" type="text" />
+      <input id="desksString3" placeholder="Число уч в 3" type="text" />
+      <button id="button4" type="submit">Отправить</button>
+      </form>
+    <div id="fourQuest"></div>
+    <p>5.Шнурки</p>
+    <form
+      onsubmit="laces(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="lacesString1" placeholder="Расст. межд. рядами" type="text" />
+      <input id="lacesString2" placeholder="Расст. межд. дырочками" type="text" />
+      <input id="lacesString3" placeholder="Дл своб. конца шнурка" type="text" />
+      <input id="lacesString4" placeholder="Кол-во дырочек в ряду" type="text" />
+      <button id="button5" type="submit">Отправить</button>
+      </form>
+    <div id="fiveQuest"></div>
+      <p>6.Минимум из двух чисел</p>
+      <form
+      onsubmit="minimumNumber1(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="minimumNumberString1" placeholder="Первое число" type="number" />
+      <input id="minimumNumberString2" placeholder="Второе число" type="number" />
+      <button id="button6" type="submit">Отправить</button>
+      </form>
+      <div id="sixQuest"></div>
+    </form>
+    <p>7.Знак числа. Скрипт находится в файле script.js</p>
+    <div id="sevenQuest"></div>
+    <p>8.Шахматная доска. Одного ли цвета поля?</p>
+    <form
+      onsubmit="chessBoard(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="ChessBoardString1" placeholder="Первое поле" type="text" />
+      <input id="ChessBoardString2" placeholder="Второе поле" type="text" />
+      <button id="button8" type="submit">Отправить</button>
+      </form>
+    <div id="eightQuest"></div>
+    </form>
+    <p>9.Является ли введённый год високосным?</p>
+    <form
+      onsubmit="leapYear(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="leapYearString1" placeholder="Введите год" type="text" />
+      <button id="button9" type="submit">Отправить</button>
+      </form>
+    <div id="nineQuest"></div>
+    <p>10.Минимум из трех чисел</p>
+    <form
+      onsubmit="minimumNumber2(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="minimumNumber2String1" placeholder="Первое число" type="text" />
+      <input id="minimumNumber2String2" placeholder="Второе число" type="text" />
+      <input id="minimumNumber3String3" placeholder="Третье число" type="text" />
+      <button id="button10" type="submit">Отправить</button>
+      </form>
+    <div id="tenQuest"></div>
+    <p>11.Совпадение? Скрипт считает кол-во совпадающих элементов.</p>
+    <form
+      onsubmit="numberOfClones(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="numberOfClonesString1" placeholder="Первое число" type="text" />
+      <input id="numberOfClonesString2" placeholder="Второе число" type="text" />
+      <input id="numberOfClonesString3" placeholder="Третье число" type="text" />
+      <button id="button11" type="submit">Отправить</button>
+      </form>
+    <div id="elevenQuest"></div>
+    <p>12.Ход ладьи. Сможет ли сходить ладья?</p>
+    <form
+      onsubmit="chessRookMove(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="ChessRookMoveString1" placeholder="Первое поле" type="text" />
+      <input id="ChessRookMoveString2" placeholder="Второе поле" type="text" />
+      <button id="button12" type="submit">Отправить</button>
+      </form>
+    <div id="twelveQuest"></div>
+    <p>13.Ход королевы. Сможет ли сходить королева?</p>
+    <form
+      onsubmit="chessQueenMove(); return false"
+      action="#"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input id="ChessQueenMoveString1" placeholder="Первое поле" type="text" />
+      <input id="ChessQueenMoveString2" placeholder="Второе поле" type="text" />
+      <button id="button13" type="submit">Отправить</button>
+      </form>
+    <div id="thirteenQuest"></div>
+    <script src="./js/script1.js"></script>
+  </body>
+</html>
